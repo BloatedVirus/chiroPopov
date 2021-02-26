@@ -1,21 +1,18 @@
 <?php
 
 require_once __DIR__ . '/Controller.php';
-require_once __DIR__ . '/../dao/UserDAO.php';
-require_once __DIR__ . '/../dao/ProtestDAO.php';
-require_once __DIR__ . '/../dao/JoinDAO.php';
+require_once __DIR__ . '/../dao/EventsDAO.php';
+require_once __DIR__ . '/../dao/LeadersDAO.php';
 
 class PagesController extends Controller {
 
   // private $todoDAO;
-  private $userDAO;
-  private $protestDAO;
-  private $joinDAO;
+  private $eventsDAO;
+  private $leadersDAO;
 
   function __construct() {
-   $this->userDAO = new UserDAO();
-   $this->protestDAO = new ProtestDAO();
-   $this->joinDAO = new JoinDAO();
+   $this->eventsDAO = new EventsDAO();
+   $this->leadersDAO = new LeadersDAO();
   }
 
   public function index() {
