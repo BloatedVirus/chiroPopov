@@ -1,0 +1,300 @@
+.header {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 5vh 95vh;
+
+  background: 
+    linear-gradient(
+      rgba(0, 22, 47, .5), 
+      rgba(0, 22, 47, .5)
+    ), url('../assets/img/background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 10rem;
+  height: 100%;
+}
+
+.title {
+  color: var(--red);
+  font-family: var(--secondaryFontFamily);
+  font-size: 5rem;
+}
+
+.subtitle {
+  color: var(--blue);
+  font-family: var(--secondaryFontFamily);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.subtitle--white {
+  color: var(--white);
+}
+
+.subtitle--center {
+  text-align: center;
+}
+
+.cta {
+  color: var(--white);
+  background-color: var(--blue);
+  border: .1rem solid var(--white);
+}
+
+.secondary {
+  color: var(--blue);
+  background-color: var(--white);
+  border: .1rem solid var(--blue);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.5vh;
+  background-color: var(--blue);
+}
+
+.menu__item {
+  float: left;
+}
+
+.menu__item--link {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 0 2.5rem;
+  font-weight: 100;
+}
+
+.menu__item--link:first-child{
+  padding-left: 0;
+}
+
+.weight{
+  font-weight: 500;
+}
+
+.menu__item--link:hover {
+  text-decoration: underline;
+}
+
+.herotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.herotext__text {
+  width: 50%;
+  color: var(--white);
+}
+
+.herotext__text--button {
+  width: 50%;
+  border-radius: .5rem;
+  padding: .5rem 2.5rem;
+  margin-right: 5rem;
+}
+
+.herotext__text--button:last-child {
+  margin-right: 0;
+}
+
+.herotext__text--button:hover{
+  color: var(--white);
+  background-color: transparent;
+  border: .1rem solid var(--white);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info__mededelingen {
+  background: 
+    linear-gradient(
+      rgba(0, 22, 47, .5), 
+      rgba(0, 22, 47, .5)
+    ), url('../assets/img/mededelingen.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+  overflow: auto;
+}
+
+.mededeling {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 2.5rem;
+  margin-bottom: 2.5rem;
+
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.mededeling__text {
+  padding: 2.5rem;
+}
+
+.mededeling__leider {
+  padding: 2.5rem;
+  padding-right: 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mededeling:last-child {
+  margin-bottom: 0;
+}
+
+.mededeling img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+.info__uniform {
+  grid-column: 1 / span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--uniform {
+  width: 50%;
+}
+
+.evenementen {
+  display: grid;
+  grid-template-columns: 62% 38%;
+  height: 100vh;
+}
+
+.evenementen__komende {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+}
+
+.evenementen__grid--upcoming {
+  overflow: scroll;
+  height: 100%;
+}
+
+.evenementen__grid--active {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+  height: 100%;
+}
+
+.evenement {
+  text-transform: uppercase;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: .5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.evenement--active {
+}
+
+.evenement--upcoming {
+  margin-bottom: 2.5rem;
+}
+
+.evenement:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  background: var(--black);
+  color: var(--white);
+}
+
+.footer--upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__footer {
+  padding: 2.5rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.afdeling {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 75vh;
+}
+
+.afdeling img {
+  object-fit: cover;
+  height: 75vh;
+  width: 100%;
+}
+
+.afdeling--text {
+  padding: 2vw;
+}
+
+.afdeling:nth-child(even) .col:last-child {
+  order:-1;
+}
+
+.pinkel { background-color: rgba(130, 73, 132, .5); }
+
+.speelclub { background-color: rgba(227, 179, 32, .5); }
+
+.rakwi { background-color: rgba(58, 181, 74, .5); }
+
+.tito { background-color: rgba(189, 21, 34, .5); }
+
+.keti { background-color: rgba(28, 58, 201, .5); }
+
+.aspi { background-color: rgba(227, 79, 32, .5); }
+
+.afdelingSubtitle {
+  font-family: var(--boldFontFamily);
+  text-transform: uppercase;
+}
+
+.pinkelSubtitle  { color: rgba(130, 73, 132); }
+
+.speelclubSubtitle  { color: rgba(227, 179, 32); }
+
+.rakwiSubtitle  { color: rgba(58, 181, 74); }
+
+.titoSubtitle  { color: rgba(189, 21, 34); }
+
+.ketiSubtitle  { color: rgba(28, 58, 201); }
+
+.aspiSubtitle  { color: rgba(227, 79, 32); }
